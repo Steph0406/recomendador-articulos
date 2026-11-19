@@ -1,4 +1,4 @@
-# 🎮 GameGraph: Recomendador de artículos de videojuegos
+# GameGraph: Recomendador de artículos de videojuegos
 
 Aplicación web que recomienda artículos de videojuegos (reseñas, guías y noticias) usando una **base de datos NoSQL de grafos (Neo4j AuraDB)** alojada en la nube.
 
@@ -6,7 +6,7 @@ Proyecto del **Parcial 2 de Bases de Datos Avanzadas**: *Desarrollo e Integraci�
 
 ---
 
-## 📌 Funcionalidades
+## Funcionalidades
 
 - **CRUD completo** de usuarios y artículos (crear, leer, actualizar, eliminar).
 - **Calificar artículos** (relación `LEYO` con calificación del 1 al 5).
@@ -22,7 +22,7 @@ Proyecto del **Parcial 2 de Bases de Datos Avanzadas**: *Desarrollo e Integraci�
 
 ---
 
-## 🏗️ Arquitectura
+## Arquitectura
 
 ```
 ┌─────────────────────┐      ┌──────────────────────┐      ┌─────────────────────────┐
@@ -36,7 +36,7 @@ Proyecto del **Parcial 2 de Bases de Datos Avanzadas**: *Desarrollo e Integraci�
 
 ---
 
-## 🧩 Modelo de grafo
+## Modelo de grafo
 
 **Nodos (labels) y propiedades**
 
@@ -58,7 +58,7 @@ Proyecto del **Parcial 2 de Bases de Datos Avanzadas**: *Desarrollo e Integraci�
 
 ---
 
-## ⚙️ Requerimientos
+## Requerimientos
 
 - Python **3.10 o superior** (desarrollado con Python 3.12 en Linux Mint)
 - Una instancia de **Neo4j AuraDB** (el plan Free es suficiente): https://console.neo4j.io
@@ -70,7 +70,7 @@ Proyecto del **Parcial 2 de Bases de Datos Avanzadas**: *Desarrollo e Integraci�
 
 ---
 
-## 🚀 Instalación
+## Instalación
 
 ```bash
 # 1. Clonar el repositorio
@@ -104,7 +104,7 @@ NEO4J_PASSWORD=tu_contraseña
 
 ---
 
-## ▶️ Ejecución
+## Ejecución
 
 Siempre con el entorno virtual activado (`source venv/bin/activate`):
 
@@ -113,7 +113,7 @@ Siempre con el entorno virtual activado (`source venv/bin/activate`):
 python -m db.conexion
 
 # 2. Crear el esquema (constraints) y cargar los datos iniciales
-#    ⚠️ Borra todos los datos existentes antes de cargar
+#    Borra todos los datos existentes antes de cargar
 python -m seed.seed
 
 # 3. (Opcional) Probar CRUD y consultas desde la terminal
@@ -131,7 +131,7 @@ La aplicación se abre en `http://localhost:8501`. La interfaz corre localmente,
 
 ---
 
-## 📁 Estructura del proyecto
+## Estructura del proyecto
 
 ```
 recomendador-articulos/
@@ -154,7 +154,7 @@ recomendador-articulos/
 
 ---
 
-## 🔍 Ejemplos de consultas Cypher
+## Ejemplos de consultas Cypher
 
 **Recomendación colaborativa**
 ```cypher
@@ -187,7 +187,7 @@ ORDER BY en_comun DESC
 
 ---
 
-## 🛠️ Solución de problemas
+## Solución de problemas
 
 | Error | Causa | Solución |
 |---|---|---|
